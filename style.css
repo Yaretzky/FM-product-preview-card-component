@@ -1,0 +1,170 @@
+/* font-family: "Montserrat", sans-serif;
+font-family: "Fraunces", sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(30, 38%, 92%);
+    min-height: 100vh;
+    font-family: "Montserrat", sans-serif;
+}
+
+h1, div.price p {
+    font-family: "Fraunces", sans-serif;;
+}
+
+div.wrapper {
+    margin: 0px 20px;
+    background-color: white;
+    border-radius: 15px 15px 15px 15px;
+}
+
+div.wrapper div.photo {
+    height: 35vh;
+    background-image: url(images/image-product-mobile.jpg);
+    background-position: center center;
+    background-size: cover;
+    border-radius: 15px 15px 0px 0px;
+}
+
+main {
+    padding: 20px 20px;
+}
+
+main span{
+    display: inline-block;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+
+main h1 {
+    margin: 15px 0;
+}
+
+main p {
+    color: hsl(228, 12%, 48%);
+    line-height: 1.5;
+}
+
+main div.price {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+main div.price p {
+    font-size: 35px;
+    color: hsl(158, 36%, 37%);
+    font-weight: bold;
+    flex-basis: 50%;
+}
+
+main div.price span {
+    font-size: 15px;
+    letter-spacing: normal;
+    flex-grow: 1;
+    margin-left: 10px;
+    text-decoration: line-through;
+}
+
+main button {
+    width: 100%;
+    color: white;
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    padding: 15px 0;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+main button svg {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+main button:hover {
+    background-color: hsl(158, 54%, 16%);
+}
+
+@media (min-width: 768px){
+
+    div.wrapper {
+        width: 50%;
+    }
+    
+}
+
+@media (min-width: 1024px){
+
+    div.wrapper {
+        display: flex;
+        flex-direction: row;
+        width: 60%;
+        height: 62vh;
+    }
+
+    div.wrapper div.photo {
+        height: 100%;
+        flex-basis: 50%;
+        background-image: url(images/image-product-desktop.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 15px 0px 0px 15px;
+        align-self: stretch;
+    }
+
+    main {
+        flex-basis: 50%;
+    }
+    
+}
+
+
+@media (min-width: 1440px){
+
+    div.wrapper {
+        width: 45%;
+        height: 70vh;
+    }
+
+    main {
+        margin-top: 20px;
+    }
+
+    main h1 {
+        margin-right: 45px;
+        margin-bottom: 30px;
+    }
+
+    main p {
+        font-size: 16px;
+        margin-right: 20px;
+    }
+
+    main div.price {
+        margin: 25px 0;
+    }
+
+    main div.price p {
+        margin-right: 10px;
+    }
+
+
+}@media (min-width: 1920px){
+
+    div.wrapper {
+
+        width: 33%;
+        height: 55vh;
+    }
+}
